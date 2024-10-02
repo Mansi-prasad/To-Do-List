@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.app{
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(0deg, rgb(226, 79, 91) 0%, rgba(253,187,45,1) 100%);
+  padding: 10px;
+}
+.todo{
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo h2{
+  color: #d23;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+  justify-content: center;
+}
+.todo h2 img{
+  width: 30px;
+  margin-left: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8e9e9;
+  border-radius: 30px;
+}
+#input-task{
+  flex: 1; /* take full width */
+  outline: none;
+  border :none;
+  background:transparent;
+  padding: 10px 0 10px 20px;
+ font-size: 16px; 
+}
+.addBtn{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #d23;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+#list-container li{
+  list-style: none;
+  padding: 12px;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li::before{
+  content: '';
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png); /* unchecked image*/
+  background-size: cover;
+  background-position: center;
+
+}
+ul li.checked{
+  text-decoration:line-through;
+}
+ul li.checked::before{
+  background-image: url(images/checked.png); /* checked image*/
+}
+ul li span{
+  /* Cross Icon */
+  position: relative;
+  right: 0;
+  font-size: 25px;
+  padding: 2px 5px;
+  border-radius: 30%;
+  line-height: 30px;
+  text-align: center;
+}
+
+ul li span:hover{
+  background-color: #e8e5e5;
+  /* color: #fff; */
+}
