@@ -1,2 +1,2 @@
 # To-Do-List
-Using HTML CSS ang JavaScript
+Using HTML CSS and JavaScript
